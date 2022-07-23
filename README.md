@@ -47,7 +47,9 @@ Api Rest with Srping Boot Framework, Java Programming Language and MongoDB datab
 ![](step8.png)
 
 
-```spring.data.mongodb.uri=mongodb+srv://raquelmichelonaulas:<password>@clustermichelon.i2gagrh.mongodb.net/<NAMEDB>?retryWrites=true&w=majority
+```
+spring.data.mongodb.uri=mongodb+srv://raquelmichelonaulas:<password>@clustermichelon.i2gagrh.mongodb.net/<NAMEDB>?retryWrites=true&w=majority
+
 ```
 
 
@@ -74,7 +76,10 @@ download the jars in the dependency list, compile the program, compile and run t
 generate the jar with all application to delivery it. The jar will be generated on the `target` folder
 
 
-``` ./mvnw package ``` 
+``` 
+./mvnw package 
+
+``` 
 
 - The absolute path to my file in my computer is `/Users/raqueldarellimichelon/Documentos/IFSC/IoTProject/vacations-destiny-mongo-api/target/vacations-destiny-mongo-api-0.0.1-SNAPSHOT.jar`
 
