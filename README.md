@@ -67,6 +67,51 @@ CREATE ONE (POST method)
 
 ### Deploy on Heroku
 
+- Open a new terminal inside the project folder
+
+- Run the following command in order to get the maven if you haven't it, 
+download the jars in the dependency list, compile the program, compile and run tests, 
+generate the jar with all application to delivery it. The jar will be generated on the `target` folder
+
+
+``` ./mvnw package ``` 
+
+- The absolute path to my file in my computer is `/Users/raqueldarellimichelon/Documentos/IFSC/IoTProject/vacations-destiny-mongo-api/target/vacations-destiny-mongo-api-0.0.1-SNAPSHOT.jar`
+
+- To run the application go to the folder where the new jar file is and run
+
+``` java -jar vacations-destiny-mongo-api-0.0.1-SNAPSHOT.jar ```
+
+- Create a new application on Heroku: New -> Create New App
+
+Put a name and click on Create app
+
+- Follow this steps suggests for the Heroku team
+
+![](heroku1.png)
+
+- If some error occurs, maybe the problem is with the Java version that heroku setted to the application. To solve that, 
+we just include on the root folder of the project the file `system.properties` with the following content:
+
+```
+java.runtime.version=17
+```
+
+
+### New Tests on Insomnia pointing to heroku app
+
+GET ALL 
+
+![](getheroku.png)
+
+CREATE ONE (POST method)
+
+![](postheroku.png)
+
+### Created the new document on the Database
+
+![](created.png)
+
 
 
 
